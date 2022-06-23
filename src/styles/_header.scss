@@ -1,0 +1,124 @@
+@import "config";
+@import "responsive";
+
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    padding: 1.5rem 0;
+    @include headerBg(0.9);
+    filter: opacity(90%);
+    z-index: 1000;
+    padding: 0;
+
+    .logo{
+        color: $primaryColor !important;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 2em;
+        text-decoration: none !important;
+    }
+    svg{
+        cursor: pointer;
+        fill: $primaryColor;
+        @include transition-ease;
+    }
+    .close{
+        fill: orange;
+    }
+
+    .wrapper{
+        position: relative;
+    }
+
+    .mobile{
+        position: absolute;
+        top: 70px;
+        width: 90%;
+        height: 80vh;
+        border-radius: 15px;
+        border: 1px solid $backgroundColor;
+        background: #f1f1f1;
+        z-index: 1001;
+
+        .one{
+            margin: .8rem 0;
+            padding: 0.5rem 0;
+
+            &:first-child{
+                padding-top: 2rem;
+            }
+            a{
+                color: $backgroundColor;
+                
+
+                svg{
+                     fill: $backgroundColor;
+                }
+            }
+
+           &:hover{
+               
+               a{
+                   color: $yellowColor;
+                   svg{
+                        fill: $yellowColor;
+                    }
+               }
+           }
+        }
+
+        .noDrop{
+            display: none;
+        }
+    }
+    .desktop{
+        display: none;
+    }
+
+    .liDrop, .liDeepDrop{
+        position: relative;
+    }
+     
+}
+
+    .drop, .deepDrop{
+       width: 15rem;
+       position: absolute;
+       top: 40px;
+       left: 10px;
+       background-color: #f1f1f1;
+       display: inline;
+       border-radius: 10px;
+       width: 15rem;
+       border: 1px solid $backgroundColor;
+
+       .two{
+           margin: 0.2rem 1rem;
+           padding: 0.5rem 0;
+
+           a{
+                svg{
+                    fill: $backgroundColor !important;
+                }
+               color: $backgroundColor !important;
+
+               &:hover{
+                   color: $yellowColor !important;
+
+                   svg{
+                        fill: $yellowColor !important;
+                    }
+               }
+           }
+       }
+     }
+
+     .deepDrop{
+        li{
+            padding: 0.5rem 0;
+        }
+     }

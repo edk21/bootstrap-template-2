@@ -1,0 +1,56 @@
+@import "config";
+@import "responsive";
+
+.hero{
+    background-image: url("file:///C:/Users/edwin/Documents/REACT/template%20a%20faire/Anyar/assets/img/hero-bg.jpg");
+   background-size: cover;
+   background-position: top center;
+   background-repeat: no-repeat;
+   margin-bottom: -90px;
+   height: 120vh;
+   overflow: hidden;
+   @include transition-ease;
+   z-index: 99;
+   position: relative;
+   padding: 100px 0;
+   width: 100vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    @include headerBg(0.9);
+   }
+
+   .hero-container{
+      margin-top: -20rem;
+
+      h1{
+        font-size: 3.5em;
+    }
+   p{
+        line-height: 30px;
+        font-size: 1.2em;
+    }
+   .cBtn{
+        margin: 1.2rem auto !important;
+        padding: 12px 2.5rem;
+        border: 1px solid $yellowColor;
+        background: transparent;
+        color: $primaryColor;
+        border-radius: 50px;
+        @include transition-ease;
+        z-index: 10;
+
+        &:hover{
+            background: $yellowColor;
+        }
+    }
+   }
+
+   
+   
+}

@@ -1,0 +1,39 @@
+@import "config";
+@import "responsive";
+@import "topbar";
+@import "header";
+@import "hero";
+@import "iconBoxes";
+@import "about";
+@import "services";
+@import "footer";
+@import "~bootstrap/scss/bootstrap";
+
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: #444;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Raleway", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: $primaryColor;
+  @include transition-ease;
+
+  &:hover{
+    text-decoration: none;
+    color: $yellowColor;
+  }
+}
+li{
+  list-style: none;
+}
+
+section{
+  padding: 60px 0;
+  overflow: hidden;
+}

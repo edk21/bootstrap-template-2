@@ -1,0 +1,122 @@
+@import "config";
+
+@include media-lg{
+    .topbar__btn{
+        display: block !important;
+    }
+
+    .dropdownBtn, .mobile{
+        display: none;
+    }
+
+     .desktop{
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-end;
+        width: 87%;
+         ul{
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             margin-top: 10px;
+
+            .one{
+                padding: 0 0.9em;
+                position: relative;
+
+                &::before, .active{
+                    position: absolute;
+                    bottom: -10px;
+                    left: 10px;
+                    width: 85%;
+                    height: 3px;
+                    background: $yellowColor;
+                }
+                &::before{
+                    content: "";
+                    opacity: 0;
+                }
+
+                a{
+                    font-size: 1em;
+                    //color: $backgroundColor;
+                }
+
+                &:hover{
+                    &::before{
+                        animation: slideIn 0.5s forwards;
+                    }
+                    svg{
+                        fill: $yellowColor;
+                    }
+                }
+            }
+        }
+        .noDrop, .deepDrop{
+            display: none;
+        }
+
+        .drop, .deepDrop{
+            position: absolute;
+            top: 20px;
+            left: 0;
+            background-color: #f1f1f1;
+            display: block;
+            border-radius: 10px;
+            width: 15rem;
+
+            li{
+                padding: 0.8rem 1rem;
+            }
+        }
+        .deepDrop{
+            top: 35px;
+            left: -80px;
+            width: 15rem;
+
+            a{
+                color: $backgroundColor;
+
+                &:hover{
+                    color: $yellowColor;
+                }
+            }
+        }
+
+       .liDrop{
+           a{
+               svg{
+                   fill: $primaryColor;
+               }
+           }
+       }
+
+        .drop{
+            a{
+                color: $backgroundColor;
+
+                &:hover{
+                    color: $yellowColor;
+                }
+            }
+            
+         }
+     }
+}
+
+@keyframes slideIn{
+    from {left: 0px; width: 0px; opacity: 0}
+  to {right: 200px; width: 85%; opacity: 1}
+}
+
+
+@include media-md{
+    .hero{
+        height: 80vh;
+        padding: unset;
+    }
+    .hero-container{
+        margin-bottom: -15rem;
+    }
+
+}
