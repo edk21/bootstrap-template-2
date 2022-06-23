@@ -80,10 +80,10 @@ const Header = () => {
           <li className='one'><a href="#team">Team</a></li>
           <li className='one'><a href="#pricing">Pricing</a></li>
           <li className='one'><a href="#blog">Blog</a></li>
-          <li className='liDrop one'><a href="#" onClick={() => handleDrop()}>Dropdown {drop ? <AiFillCaretDown /> : <AiFillCaretRight />}</a>
+          <li className='liDrop one'><a href="#n" onClick={() => handleDrop()}>Dropdown {drop ? <AiFillCaretDown /> : <AiFillCaretRight />}</a>
             <ul className={drop ? "drop" : "noDrop"}>
               <li className='two'><a href="#">Drop Down 1</a></li>
-              <li className='liDeepDrop two'><a href="#" onClick={() => handleDeepDrop()}>Deep Drop 2{deepDrop ? <AiFillCaretDown /> : <AiFillCaretRight />}</a>
+              <li className='liDeepDrop two'><a href="#n" onClick={() => handleDeepDrop()}>Deep Drop 2{deepDrop ? <AiFillCaretDown /> : <AiFillCaretRight />}</a>
                 <ul className={deepDrop ? "deepDrop" : "noDrop"}>
                   <li><a href="#">Deep Drop 1</a></li>
                   <li><a href="#">Deep Drop 2</a></li>
