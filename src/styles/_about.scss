@@ -1,0 +1,76 @@
+@import "config";
+
+.about{
+    padding: 3.75rem 0;
+
+    background: url("file:///C:/Users/edwin/Documents/REACT/template%20a%20faire/Anyar/assets/img/about-bg.png") top center no-repeat;
+    position: relative;
+
+    &::before{
+        content: "";
+        background: rgba(255, 255, 255, 0.75);
+        position: absolute;
+        inset: 0;
+    }
+
+    &__title{
+        text-align: center;
+        padding-bottom: 1.875rem;
+
+        h2{
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            padding-bottom: 0;
+            color: #054a85;
+        }
+        p{
+            margin-bottom: 0;
+            font-style: italic;
+        }
+    }
+    &__content{
+        p{
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+
+            li{
+                padding-left: 28px;
+                position: relative;
+
+                svg{
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                    font-size: 20px;
+                    line-height: 1;
+                    fill: #0880e8;
+                }
+            }
+        }
+
+        .btn-learn-more{
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding: 12px 32px;
+            @include transition-ease;
+            line-height: 1;
+            color: #0880e8;
+            margin-top: 6px;
+            border: 2px solid #0880e8;
+
+            &:hover{
+                background: #0880e8;
+                color: $primaryColor;
+            }
+        }
+    }
+}
