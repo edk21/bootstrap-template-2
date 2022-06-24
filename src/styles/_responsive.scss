@@ -1,5 +1,13 @@
 @import "config";
 
+@include media-xl{
+    .whyus{
+        .content, .accordion-list{
+            padding: 60px 100px 0 100px !important;
+        }
+     }
+}
+
 @include media-lg{
     .topbar__btn{
         display: block !important;
@@ -106,6 +114,9 @@
      .about{
         padding: 8.75rem 0;
      }
+
+     
+
 }
 
 @keyframes slideIn{
@@ -123,4 +134,10 @@
         margin-bottom: -15rem;
     }
 
+    .whyus{
+        .content, .accordion-list{
+            padding-left: 0;
+            padding-right: 0;
+        }
+     }
 }

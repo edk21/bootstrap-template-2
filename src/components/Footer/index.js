@@ -66,7 +66,7 @@ const Footer = () => {
         <div className="footer__bottom">
             <Container>
                 <div className="copyright">
-                    &#169; Copyright <strong>. all Rights Reserved</strong>
+                    &#169; Copyright <strong>. All Rights Reserved</strong>
                 </div>
                 <div className="credits">
                     Designed By <strong>Ed k.</strong>
