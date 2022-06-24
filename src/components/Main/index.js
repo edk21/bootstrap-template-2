@@ -3,6 +3,7 @@ import About from "../About"
 import Clients from "../Clients"
 import CTA from "../CTA"
 import IconBoxes from "../IconBoxes"
+import Portfolio from "../Portfolio"
 import Services from "../Services"
 import WhyUs from "../WhyUs"
 
@@ -15,6 +16,7 @@ const Main = () => {
             <WhyUs />
             <Services />
             <CTA />
+            <Portfolio />
         </main>
     )
 }

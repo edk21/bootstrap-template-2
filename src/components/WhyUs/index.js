@@ -24,8 +24,8 @@ const WhyUs = () => {
                     <Accordion defaultActiveKey='0' className="accordion-list">
                         {
                             accordion.map(item => (
-                                <Fade up>
-                                <Accordion.Item eventKey={item.id - 1} key={item.id} className="my-3 mt-xl-0">
+                                <Fade up key={item.id}>
+                                <Accordion.Item eventKey={item.id - 1}  className="my-3 mt-xl-0">
                                     <Accordion.Header>
                                         <span style={{ paddingRight: "10px", fontSize: "18px", fontWeight: "600", color: "#0880e8" }}>0{item.id}</span>{item.title}
                                     </Accordion.Header>

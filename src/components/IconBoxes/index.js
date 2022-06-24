@@ -11,7 +11,6 @@ const IconBoxes = () => {
             <Row>
                 {
                     iconboxItems.map(item => (
-                        
                         <Col key={item.id} md={6} lg={3} className="d-flex align-items-stretch mb-5 mb-lg-0">
                             <Fade up>
                                 <div className="icon__box">
@@ -28,7 +27,6 @@ const IconBoxes = () => {
                                 </div>
                             </Fade>
                         </Col>
-                        
                     ))
                 }
             </Row>

@@ -17,9 +17,9 @@ const Services = () => {
               {
                 servicesItems.map(item => (
                   
-                  <Col md={6} className={item.id !== 1 ? "d-flex align-items-stretch mt-4 mt-md-0" : "d-flex align-items-stretch"}>
+                  <Col key={item.id} md={6} className={item.id !== 1 ? "d-flex align-items-stretch mt-4 mt-md-0" : "d-flex align-items-stretch"}>
                   <Fade up>
-                    <div key={item.id} className="icon-box">
+                    <div  className="icon-box">
                       {
                         item.id === 1 ? <BsCardChecklist /> : 
                         item.id === 2 ? <BsBarChart /> : 
