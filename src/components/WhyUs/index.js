@@ -16,7 +16,7 @@ const WhyUs = () => {
                 </Col>
                 <Col lg={7} className="d-flex flex-column justify-content-center align-items-stretch">
                     <Fade up>
-                    <div className="content">
+                    <div className="content mb-xl-0 pb-lg-0">
                         <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
                     </div>
@@ -25,7 +25,7 @@ const WhyUs = () => {
                         {
                             accordion.map(item => (
                                 <Fade up>
-                                <Accordion.Item eventKey={item.id - 1} key={item.id}>
+                                <Accordion.Item eventKey={item.id - 1} key={item.id} className="my-3 mt-xl-0">
                                     <Accordion.Header>
                                         <span style={{ paddingRight: "10px", fontSize: "18px", fontWeight: "600", color: "#0880e8" }}>0{item.id}</span>{item.title}
                                     </Accordion.Header>

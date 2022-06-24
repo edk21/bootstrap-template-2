@@ -1,39 +1,54 @@
 @import "config";
 
-.services .icon-box {
-  margin-bottom: 20px;
-  padding: 50px 40px;
-  border-radius: 6px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
+.services{
+  &__title{
+    text-align: center;
+    padding-bottom: 30px;
+    h2{
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 0;
+      color: #054a85;
+    }
+    p{
+      margin-bottom: 0;
+      font-style: italic;
+    }
+  }
 
-.services .icon-box i {
-  float: left;
-  color: #f6b024;
-  font-size: 40px;
-  line-height: 0;
-}
+  .icon-box{
+    margin-bottom: 20px;
+    padding: 50px 40px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 
-.services .icon-box h4 {
-  margin-left: 70px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
+    svg{
+      float: left;
+      fill: #f6b024;
+      font-size: 40px;
+      line-height: 0;
+    }
+    h4{
+      margin-left: 70px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: #05579e;
+      @include transition-ease;
+      cursor: pointer;
 
-.services .icon-box h4 a {
-  color: #05579e;
-  transition: 0.3s;
-}
-
-.services .icon-box h4 a:hover {
-  color: #0880e8;
-}
-
-.services .icon-box p {
-  margin-left: 70px;
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
+      &:hover{
+        color: #0880e8;
+      }
+    }
+    p{
+      margin-left: 70px;
+      line-height: 24px;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
 }
