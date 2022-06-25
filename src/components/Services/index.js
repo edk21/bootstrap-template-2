@@ -3,16 +3,16 @@ import {Col, Container, Row} from "react-bootstrap"
 import Fade from "react-reveal/Fade"
 import { BsCardChecklist, BsBarChart, BsBinoculars, BsBrightnessHigh, BsCalendarWeek, BsBriefcase } from "react-icons/bs"
 import { servicesItems } from "./servicesItems"
+import CustomSectionHeader from '../../utils/CustomSectionHeader'
+const title = "Services"
+const text = "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
 
 const Services = () => {
   return (
     <section id="services" className='services'>
       <Container>
         <Fade up>
-          <div className="services__title">
-            <h2>Services</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-          </div>
+          <CustomSectionHeader title={title} text={text} />
           <Row>
               {
                 servicesItems.map(item => (

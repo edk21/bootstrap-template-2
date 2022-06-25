@@ -5,6 +5,9 @@ import Zoom from "react-reveal/Zoom"
 import Slide from "react-reveal/Slide"
 import { portfolioItems } from './portfolioItems'
 import { BsPlusLg, BsLink45Deg } from "react-icons/bs"
+import CustomSectionHeader from '../../utils/CustomSectionHeader'
+const title = "Portfolio"
+const text = "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
 
 const Portfolio = () => {
     const [all] = useState(portfolioItems)
@@ -51,10 +54,7 @@ const Portfolio = () => {
     <section id="portfolio" className='portfolio'>
         <Container>
             <Fade up>
-                <div className="portfolio__title">
-                    <h2>portfolio</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
+                <CustomSectionHeader title={title} text={text} />
                 <Row lg={12} className="d-flex justify-content-center">
                     <ul id="portfolio__filters">
                         <li className={idx1 ? 'filter-active' : ""} onClick={handleClick1}>All</li>
@@ -94,6 +94,8 @@ const Portfolio = () => {
                                               <div className="portfolio__info">
                                                   <h4>{item.title1}</h4>
                                                   <p>{item.title2}</p>
+                                                  <a href="#" className="portfolio__previewLink"><BsPlusLg /></a>
+                                                  <a href="#" className='portfolio__detailLink'><BsLink45Deg /></a>
                                               </div>
                                           </Col>
                                           
@@ -112,6 +114,8 @@ const Portfolio = () => {
                                             <div className="portfolio__info">
                                                 <h4>{item.title1}</h4>
                                                 <p>{item.title2}</p>
+                                                <a href="#" className="portfolio__previewLink"><BsPlusLg /></a>
+                                                <a href="#" className='portfolio__detailLink'><BsLink45Deg /></a>
                                             </div>
                                         </Col>
                                     ))
@@ -128,6 +132,8 @@ const Portfolio = () => {
                                             <div className="portfolio__info">
                                                 <h4>{item.title1}</h4>
                                                 <p>{item.title2}</p>
+                                                <a href="#" className="portfolio__previewLink"><BsPlusLg /></a>
+                                                <a href="#" className='portfolio__detailLink'><BsLink45Deg /></a>
                                             </div>
                                         </Col>
                                     ))

@@ -1,0 +1,90 @@
+@import "config";
+
+.team{
+    background-color: #f1f8ff;
+
+    .team__member{
+        position: relative;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        border-radius: 10px;
+        background: #fff;
+
+        .pic{
+            overflow: hidden;
+            width: 100%;
+            border-radius: 50%;
+
+            img{
+                @include transition-ease;
+            }
+        }
+
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+        .member__info{
+            padding-left: 30px;
+        }
+
+        h4{
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-size: 20px;
+            color: #05579e;
+        }
+        span{
+            display: block;
+            font-size: 15px;
+            padding-bottom: 10px;
+            position: relative;
+            font-weight: 500;
+
+            &::after{
+                content: "";
+                position: absolute;
+                display: block;
+                width: 50px;
+                height: 1px;
+                background: #bfe0fd;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        p{
+            margin: 10px 0 0 0;
+            font-size: 14px;
+        }
+
+        .social{
+            margin-top: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            a{
+                @include transition-ease;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                width: 32px;
+                height: 32px;
+                background: #ecf6fe;
+                color: #0665b7;
+
+                svg{
+                    font-size: 16px;
+                    margin: 0 2px;
+                }
+
+                &:hover{
+                    background: #0880e8;
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+}
