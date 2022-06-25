@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import CustomSectionHeader from '../../utils/CustomSectionHeader'
 import { teamInfo } from './teamInfo'
 import { FaTwitter, FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa"
+import Fade from "react-reveal/Fade"
 
 const title = "Team"
 const text = "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
@@ -15,7 +16,9 @@ const Team = () => {
             <Row>
                 {
                     teamInfo.map(item => (
+                        
                         <Col key={item.id} lg={6} className={item.id === 1 ? "" : item.id === 2 ? "mt-4 mt-lg-0" : "mt-4"}>
+                            <Fade up>
                             <div className="team__member d-flex align-items-start">
                                 <div className="pic">
                                     <img src={item.img} alt="team member" className="img-fluid" />
@@ -32,7 +35,9 @@ const Team = () => {
                                     </div>
                                 </div>
                             </div>
+                            </Fade>
                         </Col>
+                        
                     ))
                 }
             </Row>
