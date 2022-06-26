@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
+import BackToTop from "./components/BackToTop";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Hero /> 
       <Main />
       <Footer />
+      <BackToTop />
     </div>
   );
 }
