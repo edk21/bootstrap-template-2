@@ -1,7 +1,9 @@
 import React from "react"
 import About from "../About"
 import Clients from "../Clients"
+import Contact from "../Contact"
 import CTA from "../CTA"
+import FAQ from "../FAQ"
 import IconBoxes from "../IconBoxes"
 import Portfolio from "../Portfolio"
 import Pricing from "../Pricing"
@@ -21,6 +23,8 @@ const Main = () => {
             <Portfolio />
             <Team />
             <Pricing />
+            <FAQ />
+            <Contact />
         </main>
     )
 }

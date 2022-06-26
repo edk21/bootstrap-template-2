@@ -1,0 +1,16 @@
+@import "config";
+
+
+.faq{
+    background: #f1f8ff;
+
+    .faq__list{
+        padding: 0;
+
+        svg{
+            font-size: 24px;
+            color: #75dbfa;
+            margin-right: 10px;
+        }
+    }
+}
